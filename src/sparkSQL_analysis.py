@@ -43,8 +43,7 @@ la_tr = spark.read.format(FILE_TYPE) \
   .option("header", FIRST_ROW_IS_HEADER) \
   .option("sep", DELIMITER) \
   .load(FILE_LOCATION)
-
-display(la_tr)
+#display(la_tr)
 
 # COMMAND ----------
 
@@ -54,7 +53,7 @@ la_tr = la_tr.withColumn("date", to_date(col("timestamp")))
 la_tr = la_tr.withColumn("day", dayofmonth(col("date")))
 la_tr = la_tr.withColumn("month", month(col("date")))  
 la_tr = la_tr.withColumn("year", year(col("date")))
-display(la_tr)
+#display(la_tr)
 
 # COMMAND ----------
 
@@ -109,7 +108,7 @@ FROM la_tr
 ORDER BY `Device Category`, timestamp
 """)
 
-display(la_tr)
+#display(la_tr)
 
 # COMMAND ----------
 
