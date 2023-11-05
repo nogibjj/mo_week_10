@@ -8,15 +8,12 @@ The notebook manipulates the data in several ways, including:
 
 ### Data Visualization
 
-The notebook visualizes the data using several charts, including:
+The notebook visualizes the data using several charts, including as shown in the notebook:
 
 - A bar chart of the top device categories.
 - A line chart of daily visitors.
 - A bar chart of average daily visitors by weekday.
 - A histogram of bounce rate.
-
-### Example Plot 
-
 
 
 ### Example Spark SQL Query
